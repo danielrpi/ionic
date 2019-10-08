@@ -1,0 +1,28 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content padding id="page2">
+  <form >
+    <div class="spacer" style="width:300px;height:66px;" id="cLculoIMC-spacer1"></div>
+    <ion-item>
+     
+      <ion-input type="number" placeholder="Peso" #peso></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="number" placeholder="Altura" #altura></ion-input>
+    </ion-item>
+  </form>
+  <ion-button expand="block" (click)="calcular(peso.value, altura.value)">Block Button</ion-button>
+  <button ion-button color="positive" block (click)="calcular(peso.value, altura.value)">
+    Calcular!
+  </button>
+  <h3>
+    Resultado: {{ resultado }}
+  </h3>
+
+</ion-content>
